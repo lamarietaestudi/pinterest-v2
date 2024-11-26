@@ -1,0 +1,117 @@
+#app {
+  columns: 5 264px;
+  margin: 20px 26px;
+  column-gap: 16px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  height: auto;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.imagecontent {
+  border-radius: var(--pnt-borderrradius-card);
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.profilecontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: -50px;
+}
+
+.profilecontainer > p {
+  font-size: var(--pnt-fontsize-s);
+  padding-top: 10px;
+}
+
+.profileimage {
+  border-radius: 100%;
+  border: var(--pnt-stroke-img-profile) solid;
+  width: 90px;
+  height: 90px;
+  background-color: white;
+}
+.publicationinfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 12px;
+}
+
+.visitbutton {
+  position: absolute;
+  bottom: 60%;
+  background-color: var(--pnt-bkgcolor-btn-card);
+  color: var(--pnt-textcolor-secondary);
+  border: none;
+  border-radius: var(--pnt-borderradius-btn);
+  padding: 15px 30px;
+  font-size: var(--pnt-fontsize-m);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.card-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  background-color: var(--pnt-bkgcolor-icon-card);
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  padding: 10px;
+  font-size: var(--pnt-fontsize-s);
+  font-weight: 500;
+}
+
+.card-icon.likes {
+  right: 10px;
+  color: var(--pnt-color-icon-likes);
+  color: var(--pnt-textcolor-primary);
+  font-weight: lighter;
+}
+
+.card-icon.camera {
+  left: 10px;
+  color: var(--pnt-color-icon-camera);
+  font-weight: lighter;
+}
+
+@media only screen and (max-width: 768px) {
+  #app {
+    columns: 2 160px;
+    margin: 20px 22px;
+    column-gap: 11px;
+  }
+  .visitbutton {
+    bottom: 70%;
+    padding: 10px 20px;
+    font-size: var(--pnt-fontsize-s);
+  }
+  .card-icon {
+    height: 40px;
+    width: 40px;
+    font-size: var(--pnt-fontsize-xs);
+  }
+  .card-icon.likes img {
+    width: 14px;
+  }
+  .card-icon.camera img {
+    width: 14px;
+  }
+}

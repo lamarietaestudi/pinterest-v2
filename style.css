@@ -1,0 +1,45 @@
+:root {
+  --pnt-textcolor-primary: #000000;
+  --pnt-textcolor-secondary: #ffffff;
+  --pnt-textcolor-tertiary: #757575;
+  --pnt-bkgcolor-btn-menu-active: #000000;
+  --pnt-bkgcolor-btn-menu-inactive: #ffffff;
+  --pnt-bkgcolor-btn-card: #ff0000;
+  --pnt-bkgcolor-field-search: #ececec;
+  --pnt-bkgcolor-icon-card: #e7e7e7;
+
+  --pnt-color-icon-likes: #ff5a79;
+  --pnt-color-icon-menu: #757575;
+  --pnt-color-icon-camera: #000000;
+
+  --pnt-borderradius-btn: 30px;
+  --pnt-borderrradius-card: 20px;
+
+  --pnt-stroke-img-profile: 8px;
+
+  --pnt-fontsize-m: 24px;
+  --pnt-fontsize-s: 16px;
+  --pnt-fontsize-xs: 12px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+}
+
+.imagenotfound {
+  font-size: var(--pnt-fontsize-s);
+  font-weight: 600;
+  color: var(--pnt-textcolor-primary);
+  border: 4px solid red;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: rgba(255, 182, 182, 0.246);
+  min-width: 300px;
+  width: 80%;
+  margin: 20px auto;
+}
