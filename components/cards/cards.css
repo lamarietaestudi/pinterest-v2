@@ -13,6 +13,7 @@
   height: auto;
   padding-bottom: 30px;
   position: relative;
+  break-inside: avoid; /* Así evito que el contenido se divida entre las columnas */
 }
 
 .imagecontent {
